@@ -20,27 +20,28 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"eve.iowin.win","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="2022年到来了，重新部署一下自己的Blog，记录学习过程！">
+<meta name="description" content="1.安装qbittorrent-nox1apt-get install qbittorrent-nox  2.设置开机启动1nano &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;qbittorrent-nox.service  12345678910[Unit]Description&#x3D;qBittorrent-noxAfter&#x3D;network.target[Service]User&#x3D;rootType&#x3D;f">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2022新起点">
-<meta property="og:url" content="https://eve.iowin.win/2022/01/02/2022%E6%96%B0%E8%B5%B7%E7%82%B9/index.html">
+<meta property="og:title" content="安装qbittorrent-nox">
+<meta property="og:url" content="https://eve.iowin.win/2022/01/07/%E5%AE%89%E8%A3%85qbittorrent-nox/index.html">
 <meta property="og:site_name" content="Weyes&#39;Blog">
-<meta property="og:description" content="2022年到来了，重新部署一下自己的Blog，记录学习过程！">
+<meta property="og:description" content="1.安装qbittorrent-nox1apt-get install qbittorrent-nox  2.设置开机启动1nano &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;qbittorrent-nox.service  12345678910[Unit]Description&#x3D;qBittorrent-noxAfter&#x3D;network.target[Service]User&#x3D;rootType&#x3D;f">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-01-02T07:59:23.000Z">
-<meta property="article:modified_time" content="2022-01-02T08:10:01.889Z">
+<meta property="article:published_time" content="2022-01-07T15:50:24.000Z">
+<meta property="article:modified_time" content="2022-01-07T15:55:21.474Z">
 <meta property="article:author" content="Weyes">
+<meta property="article:tag" content="qbittorrent-nox">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://eve.iowin.win/2022/01/02/2022%E6%96%B0%E8%B5%B7%E7%82%B9/">
+<link rel="canonical" href="https://eve.iowin.win/2022/01/07/%E5%AE%89%E8%A3%85qbittorrent-nox/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://eve.iowin.win/2022/01/02/2022%E6%96%B0%E8%B5%B7%E7%82%B9/","path":"2022/01/02/2022新起点/","title":"2022新起点"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://eve.iowin.win/2022/01/07/%E5%AE%89%E8%A3%85qbittorrent-nox/","path":"2022/01/07/安装qbittorrent-nox/","title":"安装qbittorrent-nox"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>2022新起点 | Weyes'Blog</title>
+<title>安装qbittorrent-nox | Weyes'Blog</title>
   
 
 
@@ -107,7 +108,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -120,6 +121,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85qbittorrent-nox"><span class="nav-number">1.</span> <span class="nav-text">1.安装qbittorrent-nox</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8"><span class="nav-number">2.</span> <span class="nav-text">2.设置开机启动</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-%E4%BF%AE%E6%94%B9qbittorrent-nox-service%E6%96%87%E4%BB%B6%E5%90%8E%E9%87%8D%E6%96%B0%E8%BD%BD%E5%85%A5"><span class="nav-number">3.</span> <span class="nav-text">3.修改qbittorrent-nox.service文件后重新载入</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8"><span class="nav-number">3.1.</span> <span class="nav-text">启动</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8"><span class="nav-number">3.2.</span> <span class="nav-text">设置开机启动</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%8A%B6%E6%80%81"><span class="nav-number">3.3.</span> <span class="nav-text">查看状态</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%BB%98%E8%AE%A4%E8%B4%A6%E5%8F%B7%EF%BC%9Aadmin-%E5%AF%86%E7%A0%81%EF%BC%9Aadminadmin"><span class="nav-number"></span> <span class="nav-text">默认账号：admin 密码：adminadmin</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%BB%98%E8%AE%A4%E7%99%BB%E9%99%86%E7%BD%91%E5%9D%80%EF%BC%9Aip-8080"><span class="nav-number"></span> <span class="nav-text">默认登陆网址：ip:8080</span></a></div>
         </div>
         <!--/noindex-->
 
@@ -183,7 +185,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://eve.iowin.win/2022/01/02/2022%E6%96%B0%E8%B5%B7%E7%82%B9/">
+    <link itemprop="mainEntityOfPage" href="https://eve.iowin.win/2022/01/07/%E5%AE%89%E8%A3%85qbittorrent-nox/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -196,7 +198,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          2022新起点
+          安装qbittorrent-nox
         </h1>
 
         <div class="post-meta-container">
@@ -208,7 +210,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-01-02 15:59:23 / 修改时间：16:10:01" itemprop="dateCreated datePublished" datetime="2022-01-02T15:59:23+08:00">2022-01-02</time>
+      <time title="创建时间：2022-01-07 23:50:24 / 修改时间：23:55:21" itemprop="dateCreated datePublished" datetime="2022-01-07T23:50:24+08:00">2022-01-07</time>
     </span>
 
   
@@ -221,8 +223,21 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p><strong>2022年到来了，重新部署一下自己的Blog，记录学习过程！</strong></p>
+        <h5 id="1-安装qbittorrent-nox"><a href="#1-安装qbittorrent-nox" class="headerlink" title="1.安装qbittorrent-nox"></a>1.安装qbittorrent-nox</h5><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-<span class="keyword">get</span> install qbittorrent-nox</span><br></pre></td></tr></table></figure>
 
+<h5 id="2-设置开机启动"><a href="#2-设置开机启动" class="headerlink" title="2.设置开机启动"></a>2.设置开机启动</h5><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/systemd/system/qbittorrent-nox.service</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">Unit</span>]</span><br><span class="line">Description=qBittorrent-nox</span><br><span class="line">After=network.target</span><br><span class="line">[<span class="meta">Service</span>]</span><br><span class="line">User=root</span><br><span class="line">Type=forking</span><br><span class="line">RemainAfterExit=yes</span><br><span class="line">ExecStart=/usr/bin/qbittorrent-nox -d</span><br><span class="line">[<span class="meta">Install</span>]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-修改qbittorrent-nox-service文件后重新载入"><a href="#3-修改qbittorrent-nox-service文件后重新载入" class="headerlink" title="3.修改qbittorrent-nox.service文件后重新载入"></a>3.修改qbittorrent-nox.service文件后重新载入</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br></pre></td></tr></table></figure>
+
+<h6 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start qbittorrent-nox</span><br></pre></td></tr></table></figure>
+
+<h6 id="设置开机启动"><a href="#设置开机启动" class="headerlink" title="设置开机启动"></a>设置开机启动</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> qbittorrent-nox</span><br></pre></td></tr></table></figure>
+
+<h6 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status qbittorrent-nox</span><br></pre></td></tr></table></figure>
+
+<h2 id="默认账号：admin-密码：adminadmin"><a href="#默认账号：admin-密码：adminadmin" class="headerlink" title="默认账号：admin 密码：adminadmin"></a>默认账号：admin 密码：adminadmin</h2><h2 id="默认登陆网址：ip-8080"><a href="#默认登陆网址：ip-8080" class="headerlink" title="默认登陆网址：ip:8080"></a>默认登陆网址：ip:8080</h2>
     </div>
 
     
@@ -230,16 +245,19 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/qbittorrent-nox/" rel="tag"># qbittorrent-nox</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2022/01/03/Debian%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%B0%83%E8%AF%95%E8%AE%B0%E5%BD%95/" rel="prev" title="Debian系统的调试记录">
+                  <i class="fa fa-chevron-left"></i> Debian系统的调试记录
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/01/02/Apache-acme-cloudflare-%E5%BC%80%E5%90%AF%E7%BD%91%E7%AB%99HTTPS/" rel="next" title="Apache+acme+cloudflare 开启网站HTTPS">
-                  Apache+acme+cloudflare 开启网站HTTPS <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
